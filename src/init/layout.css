@@ -1,0 +1,11 @@
+:root {
+    --primary-st1 : #016A8D;
+    --primary-st2 : #006A8E;
+    --menu-st1 : #F1F0EC;
+    --menu-st2 : rgba(241, 240, 236, 0.8);
+    --black-st1 : #191919;
+    --black-st2 : #888;
+    --black-st3 : #222;
+}
+body {overflow-y: scroll;}
+.inner {padding: 0 102px;}
