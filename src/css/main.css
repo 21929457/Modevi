@@ -6,7 +6,8 @@ header {
     display: flex;
     align-items: center; 
     width: 100%; height: 90px; 
-    background-color: var(--menu-st1);}
+    background-color: var(--menu-st1);
+}
 header .inner {
     display: flex; 
     align-items: center;
@@ -129,4 +130,44 @@ header .inner nav a:hover::after {
     opacity: 1;
     visibility: visible;
     transition: .3s;
+}
+.mt-90 {
+    margin-top: 90px;
+}
+.main-tit {
+    font-size: 36px;
+    color: var(--black-st1);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 21px;
+}
+.main-tab {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}
+.main-tab p {
+    position: relative;
+    color: var(--black-st1);
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 10px;
+    margin-left: 24px;
+}
+.main-tab p:first-child {
+    margin-left: 0;
+}
+.main-tab p.active {
+    color: var(--primary-st1);
+    font-weight: 700;
+}
+.main-tab p.active::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-st1);
+    left: 0;
+    bottom: -1px;
 }
