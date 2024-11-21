@@ -1,5 +1,15 @@
 @import url('../init/layout.css');
 @import url('../lib/swiper-bundle.min.css');
+.mt-90 {
+    margin-top: 90px;
+}
+.mt-130 {
+    margin-top: 130px;
+}
+.pd-1013 {
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
 .mainTop {
     height: calc(100vh - 90px);
     margin-top: 90px;
@@ -58,9 +68,6 @@
     visibility: visible;
     transition: .3s;
 }
-.mt-90 {
-    margin-top: 90px;
-}
 .main-tit {
     font-size: 36px;
     color: var(--black-st1);
@@ -99,9 +106,6 @@
     left: 0;
     bottom: -1px;
 }
-.prod-wrap {
-    width: 25%; 
-}
 .prod-wrap > ul {
     display: flex;
     gap: 12px;
@@ -128,4 +132,37 @@
     font-weight: 500;
     line-height: 19px;
     margin-top: 12px;
+}
+.fit {
+    background-image: url(../image/pic/main2Sectionbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fit .prod-wrap > ul > li {
+    width: 33.33333%;
+    background-color: white;
+}
+.fit .prod-wrap > ul > li > a > .img-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: unset;
+}
+.fit .prod-wrap > ul > li > a > .img-wrap .product-code {
+    margin-top: 30px;
+    line-height: 19px;
+    color: var(--black-st2);
+}
+.fit .prod-wrap > ul > li > a > .img-wrap .product-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+}
+.fit .prod-wrap > ul > li > a > .img-wrap .product-detail-btn {
+    color: var(--primary-st2);
+    line-height: 19px;
+    margin-top: 24px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--primary-st2);
 }
