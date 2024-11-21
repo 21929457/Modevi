@@ -1,0 +1,73 @@
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    align-items: center; 
+    width: 100%; height: 90px; 
+    background-color: var(--menu-st1);
+    z-index: 100;
+}
+header .inner {
+    display: flex; 
+    align-items: center;
+    height: 100%;
+}
+header .inner nav {
+    height: 100%;
+}
+header .inner nav a{
+    display: inline-flex;
+    position: relative;
+    margin-left: 60px;
+    width: fit-content;
+    height: 100%;
+    align-items: center;
+}
+header .inner nav a::after {
+    content: '';
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-st1);
+    border-radius: 50%;
+}
+header .inner .headerR {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+header .inner .headerR a {
+    position: relative;
+    margin-left: 50px;
+}
+header .inner .headerR a:first-child {
+    margin-left: 0;
+}
+header .inner .headerR a:last-child {
+    padding-right: 15px;
+    color: var(--primary-st1);
+}
+header .inner .headerR a:last-child::after {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 19px;
+    background-image: url('../image/ico/icon_smartstore_arrow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0;
+    bottom: -2px;
+}
+header .inner .headerR a img {
+    width: 19px;
+    height: 19px;
+}
+header .inner nav a:hover {
+    color: var(--primary-st1);
+    font-weight: 700;
+}
+header .inner nav a:hover::after {
+    display: inline-block;
+}

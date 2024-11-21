@@ -1,3 +1,4 @@
+@import url('./init.min.css');
 :root {
     --primary-st1 : #016A8D;
     --primary-st2 : #006A8E;
@@ -9,3 +10,4 @@
 }
 body {overflow-y: scroll;}
 .inner {padding: 0 102px;}
+#container {position: relative;}

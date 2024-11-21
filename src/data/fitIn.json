@@ -1,0 +1,33 @@
+[
+    {
+        "id" : 0,
+        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/new1.png",
+        "code" : "MRDC117PSM1",
+        "name" : "미니 냉장고 파스텔 핑크 117L",
+        "discription" : [
+            "생기있는 파스텔컬러로 공간에 감성을 더하다",
+            "신선함이 오래가는 360˚ 다이렉트 모션 쿨링",
+            "상냉장 하냉동, 파스텔 mini로 미니멀 라이프스타일을 완성"
+        ]
+    },
+    {
+        "id" : 1,
+        "code" : "MRNF474SPI1",
+        "name" : "피트인 냉장공 실버메탈 474L",
+        "discription" : [
+            "시크한 감성을 담은 Silver Metal",
+            "신선함을 빠르게 채워주는 360˚ 메탈 파워 쿨링",
+            "식재료의 신선함을 지켜주는 5가지 특별한 모드"
+        ]
+    },
+    {
+        "id" : 2,
+        "code" : "MO8D23SFE1",
+        "name" : "플랫 전자레인지 실버 23L",
+        "discription" : [
+            "회전 없이 플랫한 공간에서 구석구석 빠르게",
+            "더 넓은 내부, 공간활용 100%",
+            "최대 800W, 5단계 고주파 출력 조절"
+        ]
+    }
+]

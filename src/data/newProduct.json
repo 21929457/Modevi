@@ -1,7 +1,7 @@
 [
     {
         "id" : 0,
-        "url" : "",
+        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/new1.png",
         "name" : "와인에디션 실버글라스 553L",
         "price" : "1,490,000",
         "discription" : [
@@ -12,7 +12,7 @@
     },
     {
         "id" : 1,
-        "url" : "",
+        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/new2.png",
         "name" : "김치에디션 실버메탈 601L",
         "price" : "1,490,000",
         "discription" : [
@@ -23,7 +23,7 @@
     },
     {
         "id" : 2,
-        "url" : "",
+        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/new3.png",
         "name" : "모드비 드럼 세탁기 화이트 10kg",
         "price" : "599,000",
         "discription" : [
@@ -34,7 +34,7 @@
     },
     {
         "id" : 3,
-        "url" : "",
+        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/new4.png",
         "name" : "모드비 전기레인지 블랙",
         "price" : "399,000",
         "discription" : [
