@@ -1,7 +1,7 @@
 [
     {
         "id" : 0,
-        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/new1.png",
+        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/FITIN1.png",
         "code" : "MRDC117PSM1",
         "name" : "미니 냉장고 파스텔 핑크 117L",
         "discription" : [
@@ -12,6 +12,7 @@
     },
     {
         "id" : 1,
+        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/FITIN2.png",
         "code" : "MRNF474SPI1",
         "name" : "피트인 냉장공 실버메탈 474L",
         "discription" : [
@@ -22,6 +23,7 @@
     },
     {
         "id" : 2,
+        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/FITIN3.png",
         "code" : "MO8D23SFE1",
         "name" : "플랫 전자레인지 실버 23L",
         "discription" : [
