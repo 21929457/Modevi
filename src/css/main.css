@@ -10,6 +10,9 @@
     padding-top: 100px;
     padding-bottom: 130px;
 }
+.pd-13 {
+    padding: 130px 0;
+}
 .mainTop {
     height: calc(100vh - 90px);
     margin-top: 90px;
@@ -138,6 +141,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.fit .prod-wrap > ul {
+    display: none;
+}
 .fit .prod-wrap > ul > li {
     width: 33.33333%;
     background-color: white;
@@ -164,5 +170,17 @@
     line-height: 19px;
     margin-top: 24px;
     font-weight: 500;
+    border-bottom: 1px solid var(--primary-st2);
+}
+.fit .prod-wrap > ul.show {
+    display: flex;
+}
+.story .main-tit {
+    text-align: left;
+}
+.more {
+    font-weight: 500;
+    color: var(--primary-st2);
+    margin-top: 13px;
     border-bottom: 1px solid var(--primary-st2);
 }

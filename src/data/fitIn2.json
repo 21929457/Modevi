@@ -1,35 +1,35 @@
 [
     {
         "id" : 0,
-        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/FITIN1.png",
-        "code" : "MRDC117PSM1",
-        "name" : "미니 냉장고 파스텔 핑크 117L",
+        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/FITIN4.png",
+        "code" : "MRNF601SPM2",
+        "name" : "김치에디션 실버메탈 601L",
         "discription" : [
-            "생기있는 파스텔컬러로 공간에 감성을 더하다",
-            "신선함이 오래가는 360˚ 다이렉트 모션 쿨링",
-            "상냉장 하냉동, 파스텔 mini로 미니멀 라이프스타일을 완성"
+            "클래식한 메탈과 고급스러운 실버 컬러의 조화",
+            "넉넉하고 여유로운 공간 스마트 보관실",
+            "라이프 스타일에 맞게 김치,냉장,냉동까지 트리플 스페이스"
         ]
     },
     {
         "id" : 1,
-        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/FITIN2.png",
-        "code" : "MRNF474SPI1",
-        "name" : "피트인 냉장공 실버메탈 474L",
+        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/FITIN5.png",
+        "code" : "MRNH553AWS1",
+        "name" : "와인에디션 실버글라스 553L",
         "discription" : [
-            "시크한 감성을 담은 Silver Metal",
-            "신선함을 빠르게 채워주는 360˚ 메탈 파워 쿨링",
-            "식재료의 신선함을 지켜주는 5가지 특별한 모드"
+            "도시 감성을 담은 Chic Silver Glass",
+            "냉장실, 냉동실, 와인보관실로 구분된 트리플 스페이스",
+            "섬세한 와인을 위하여 맛있는 온도로 보관하세요."
         ]
     },
     {
         "id" : 2,
-        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/FITIN3.png",
-        "code" : "MO8D23SFE1",
-        "name" : "플랫 전자레인지 실버 23L",
+        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/FITIN6.png",
+        "code" : "MWFB10DBPM1",
+        "name" : "모드비 드럼 세탁기 다크 블루 10kg",
         "discription" : [
-            "회전 없이 플랫한 공간에서 구석구석 빠르게",
-            "더 넓은 내부, 공간활용 100%",
-            "최대 800W, 5단계 고주파 출력 조절"
+            "2중 강화유리 도어와 크롬디자인",
+            "얼룩제거 코스와 원터치 세탁모드",
+            "터치식 &다이얼 컨트롤러"
         ]
     }
 ]

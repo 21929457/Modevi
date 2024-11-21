@@ -1,18 +1,13 @@
 $('header').load('../../src/component/header.html');
 
-let active = $('.mainSlide .swiper-slide-active');
-let allTopTxt = $('.topTxt');
-let topTxt = active.find('.topTxt');
+const fit_tab = $('.fit .main-tab p');
+const new_content = $('.new .prod-wrap ul');
+const fit_content = $('.fit .prod-wrap ul');
 
-setInterval(function(){
-    topTxt.removeClass('fadeUp')
-    topTxt.addClass('fadeUp');
-} , 800)
-
-
+//신제퓸 데이터바인딩
 $.get('../../src/data/newProduct.json').then(function(data){
     data.forEach((e , i) => {
-        $('.new .prod-wrap ul').append(
+        new_content.append(
            `<li>
                 <a href="">
                     <div class="img-wrap"><img src="${e.url}"></div>
@@ -25,21 +20,34 @@ $.get('../../src/data/newProduct.json').then(function(data){
     });
 }).catch(function(){
 })
-$.get('../../src/data/fitIn1.json').then(function(data){
-    data.forEach((e , i) => {
-        $('.fit-tab1').append(
-           `<li>
-                <a href="">
-                    <div class="img-wrap">
-                        <img src="${e.url}">
-                        <p class="product-code">${e.code}</p>
-                        <p class="product-title">${e.name}</p>
-                        <p class="product-detail-btn">View More</p>
-                    </div>
-                </a>
-            </li>
-            ` 
-        )
-    });
-}).catch(function(){
-})
+
+//FITIN 데이터바인딩
+for(var i = 1; i <= 3; i++) {
+    $.get(`../../src/data/fitIn${i}.json`).then(function(data){
+        data.forEach((e , i) => {
+            fit_content.eq(i).append(
+               `<li>
+                    <a href="">
+                        <div class="img-wrap">
+                            <img src="${e.url}">
+                            <p class="product-code">${e.code}</p>
+                            <p class="product-title">${e.name}</p>
+                            <p class="product-detail-btn">View More</p>
+                        </div>
+                    </a>
+                </li>
+                ` 
+            )
+        });
+    }).catch(function(){
+    })
+}
+
+for(let i = 0; i < fit_tab.length; i++) {
+    fit_tab.eq(i).on('click' , function(e){
+        fit_tab.removeClass('active');
+        fit_content.removeClass('show');
+        fit_tab.eq(i).addClass('active');
+        fit_content.eq(i).addClass('show');
+    })
+}

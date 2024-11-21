@@ -1,0 +1,35 @@
+[
+    {
+        "id" : 0,
+        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/FITIN7.png",
+        "code" : "MRNH553AWS1",
+        "name" : "와인에디션 실버글라스 553L",
+        "discription" : [
+            "도시 감성을 담은 Chic Silver Glass",
+            "냉장실, 냉동실, 와인보관실로 구분된 트리플 스페이스",
+            "섬세한 와인을 위하여 맛있는 온도로 보관하세요."
+        ]
+    },
+    {
+        "id" : 1,
+        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/FITIN8.png",
+        "code" : "MRNF6101BPM1",
+        "name" : "김치에디션 블랙메탈 601L",
+        "discription" : [
+            "클래식한 메탈과 고급스러운 블랙 컬러의 조화",
+            "넉넉하고 여유로운 공간 스마트 보관실",
+            "라이프 스타일에 맞게 김치,냉장,냉동까지 트리플 스페이스"
+        ]
+    },
+    {
+        "id" : 2,
+        "url" : "https://raw.githubusercontent.com/21929457/Modevi/refs/heads/main/src/image/pic/FITIN9.png",
+        "code" : "MRNF474CPI1",
+        "name" : "피트인 냉장고 코타 그레이/블루 474L",
+        "discription" : [
+            "따뜻한 감성을 담은 Cotta Colors",
+            "신선함을 빠르게 채워주는 360˚ 메탈 파워 쿨링",
+            "식재료의 신선함을 지켜주는 5가지 특별한 모드"
+        ]
+    }
+]
