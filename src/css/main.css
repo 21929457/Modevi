@@ -13,6 +13,10 @@
 .pd-13 {
     padding: 130px 0;
 }
+.pd-70 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
 .mainTop {
     height: calc(100vh - 90px);
     margin-top: 90px;
@@ -229,6 +233,57 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
-.story .slideBtn {
+.story .slideBtn , .youtube .slideBtn{
     top: calc(50% - 46px);
+}
+.loca {
+    display: flex;
+}
+.loca > div {
+    width: 50%;
+}
+.loca > div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg1);
+    padding: 70px;
+}
+.loca-tit {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+.loca-time , .loca-info {
+    font-size: 18px;
+    color: var(--black-st2);
+    line-height: 26px;
+}
+.loca-info {
+    margin-top: 5px;
+}
+.loca-info span {
+    margin-left: 5px;
+    cursor: pointer;
+}
+.loca-bottm {
+    display: flex;
+    margin-top: auto;
+}
+.loca-bottm div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.loca-bottm p:nth-of-type(1) {
+    font-size: 18px;
+    line-height: 26px;
+    word-break: keep-all;
+}
+.loca-bottm a {
+    width: fit-content;
+    margin-top: 5px;
+    line-height: 24px;
+    color: var(--primary-st2);
+    border-bottom: 1px solid var(--primary-st2);
 }

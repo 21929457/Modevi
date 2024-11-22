@@ -7,6 +7,8 @@
     --black-st1 : #191919;
     --black-st2 : #888;
     --black-st3 : #222;
+    --black-st4 : #d8d8d8;
+    --main-bg1 : #E8E7E0;
 }
 body {overflow-y: scroll;}
 .inner {padding: 0 102px;}

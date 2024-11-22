@@ -1,8 +1,19 @@
 $('header').load('../../src/component/header.html');
+$('footer').load('../../src/component/footer.html');
 
 const fit_tab = $('.fit .main-tab p');
 const new_content = $('.new .prod-wrap ul');
 const fit_content = $('.fit .prod-wrap ul');
+
+//메뉴 탭 기능
+for(let i = 0; i < fit_tab.length; i++) {
+    fit_tab.eq(i).on('click' , function(e){
+        fit_tab.removeClass('active');
+        fit_content.removeClass('show');
+        fit_tab.eq(i).addClass('active');
+        fit_content.eq(i).addClass('show');
+    })
+}
 
 //신제퓸 데이터바인딩
 $.get('../../src/data/newProduct.json').then(function(data){
@@ -43,21 +54,12 @@ for(var i = 1; i <= 3; i++) {
     })
 }
 
-for(let i = 0; i < fit_tab.length; i++) {
-    fit_tab.eq(i).on('click' , function(e){
-        fit_tab.removeClass('active');
-        fit_content.removeClass('show');
-        fit_tab.eq(i).addClass('active');
-        fit_content.eq(i).addClass('show');
-    })
-}
-
 // story 데이터바인딩
 $.get('../../src/data/storySlide.json').then((data)=>{
     data.map((data , i)=>{
         $('.story ul').append(`
             <li class="swiper-slide">
-                <a href="${data.link}">
+                <a href="${data.link}" target="_blank">
                     <div class="img-wrap"><img src="${data.url}" alt="story${i}"></div>
                     <p>${data.title}</p>
                     <p>${data.discription}</p>
@@ -66,11 +68,12 @@ $.get('../../src/data/storySlide.json').then((data)=>{
         `)
     })
 })
-$.get('../../src/data/storySlide.json').then((data)=>{
+// yotube 데이터바인딩
+$.get('../../src/data/yotubeSlide.json').then((data)=>{
     data.map((data , i)=>{
-        $('.yotube .swiper-wrapper').append(`
+        $('.youtube .swiper-wrapper').append(`
             <li class="swiper-slide">
-                <a href="${data.link}">
+                <a href="${data.link}" target="_blank">
                     <div class="img-wrap"><img src="${data.url}" alt="story${i}"></div>
                     <p>${data.title}</p>
                     <p>${data.discription}</p>

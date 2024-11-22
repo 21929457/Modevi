@@ -1,3 +1,4 @@
+// //main < banner
 var mainTop = new Swiper('.mainSlide' , {
     loop : true,
     speed : 800,
@@ -15,6 +16,7 @@ var mainTop = new Swiper('.mainSlide' , {
     }
 });
 
+//main < story
 var story = new Swiper('.story' , {
     slidesPerView: 3,
     spaceBetween : 12,
@@ -24,7 +26,9 @@ var story = new Swiper('.story' , {
         prevEl: ".swiper-button-prev",
     },
 });
-var youtube = new Swiper('.yotube' , {
+
+//main < youtube
+var youtube = new Swiper('.youtube' , {
     slidesPerView: 2,
     spaceBetween : 12,
     loop : true,
