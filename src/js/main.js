@@ -51,3 +51,31 @@ for(let i = 0; i < fit_tab.length; i++) {
         fit_content.eq(i).addClass('show');
     })
 }
+
+// story 데이터바인딩
+$.get('../../src/data/storySlide.json').then((data)=>{
+    data.map((data , i)=>{
+        $('.story ul').append(`
+            <li class="swiper-slide">
+                <a href="${data.link}">
+                    <div class="img-wrap"><img src="${data.url}" alt="story${i}"></div>
+                    <p>${data.title}</p>
+                    <p>${data.discription}</p>
+                </a>
+            </li>
+        `)
+    })
+})
+$.get('../../src/data/storySlide.json').then((data)=>{
+    data.map((data , i)=>{
+        $('.yotube .swiper-wrapper').append(`
+            <li class="swiper-slide">
+                <a href="${data.link}">
+                    <div class="img-wrap"><img src="${data.url}" alt="story${i}"></div>
+                    <p>${data.title}</p>
+                    <p>${data.discription}</p>
+                </a>
+            </li>
+        `)
+    })
+})
