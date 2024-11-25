@@ -11,5 +11,22 @@
     --main-bg1 : #E8E7E0;
 }
 body {overflow-y: scroll;}
-.inner {padding: 0 102px;}
 #container {position: relative;}
+.inner {padding: 0 102px;}
+.mt-90 {
+    margin-top: 90px;
+}
+.mt-130 {
+    margin-top: 130px;
+}
+.pd-1013 {
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
+.pd-13 {
+    padding: 130px 0;
+}
+.pd-70 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}

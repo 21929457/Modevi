@@ -1,21 +1,43 @@
 @import url('../init/layout.css');
 @import url('../lib/swiper-bundle.min.css');
-.mt-90 {
-    margin-top: 90px;
+
+#go-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 58px;
+    z-index: 300;
 }
-.mt-130 {
-    margin-top: 130px;
+#go-top .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 58px;
+    border: 1px solid #C9B796;
+    cursor: pointer;
+    transition: .3s;
 }
-.pd-1013 {
-    padding-top: 100px;
-    padding-bottom: 130px;
+#go-top .youtube-btn {
+    transition: .3s;
+    transform: translateY(60px);
+    background-color: #C9B796;
 }
-.pd-13 {
-    padding: 130px 0;
+#go-top .youtube-btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
-.pd-70 {
-    padding-top: 70px;
-    padding-bottom: 70px;
+#go-top .youtube-btn img {
+    width: 29px;
+}
+#go-top .top-btn {
+    background-color: white;
+}
+#go-top .youtube-btn.up {
+    transform: translateY(0);
 }
 .mainTop {
     height: calc(100vh - 90px);

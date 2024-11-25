@@ -1,11 +1,43 @@
-$('header').load('../../src/component/header.html');
-$('footer').load('../../src/component/footer.html');
-
+const topBtn = $('.youtube-btn');
+const nav_a = $('nav a');
+const nav_depth2 = $('.nav-depth2');
 const fit_tab = $('.fit .main-tab p');
 const new_content = $('.new .prod-wrap ul');
 const fit_content = $('.fit .prod-wrap ul');
+const footerSelector = $('.fs-select');
+const footerSelectorDepth2 = document.getElementsByClassName('family-depth2')[0];
+const family_arrow = document.getElementsByClassName('family-arrow')[0];
+const family_site_a = $('.family-depth2 a');
+let nav_length = Object.keys(nav_a).length;
+let site_length = Object.keys(family_site_a).length;
 
-//메뉴 탭 기능
+//TopButton Up funtion
+$(window).on('scroll' , function(){
+    this.scrollY > 0 ? topBtn.addClass('up') : topBtn.removeClass('up');
+})
+
+//Header mouseover
+function show_header(target) {
+    for(let i = 0; i < nav_length - 3; i++) {
+        target.eq(i).on('mouseover' , function(){
+            nav_depth2.removeClass('show');
+            nav_depth2.eq(i).addClass('show');
+        })
+    }
+}
+function up_header(target){
+    for(let i = 0; i < nav_length - 3; i++) {
+        target.eq(i).on('mouseleave' , function(){
+            nav_depth2.removeClass('show');
+        })
+    }
+}
+show_header(nav_a);
+show_header(nav_depth2);
+up_header(nav_a);
+up_header(nav_depth2);
+
+//Menu Tab Function
 for(let i = 0; i < fit_tab.length; i++) {
     fit_tab.eq(i).on('click' , function(e){
         fit_tab.removeClass('active');
@@ -15,7 +47,7 @@ for(let i = 0; i < fit_tab.length; i++) {
     })
 }
 
-//신제퓸 데이터바인딩
+//New-Product DataBinding
 $.get('../../src/data/newProduct.json').then(function(data){
     data.forEach((e , i) => {
         new_content.append(
@@ -32,8 +64,8 @@ $.get('../../src/data/newProduct.json').then(function(data){
 }).catch(function(){
 })
 
-//FITIN 데이터바인딩
-for(var i = 1; i <= 3; i++) {
+//FITIN DataBinding
+for(var i = 1; i <= fit_content.length; i++) {
     $.get(`../../src/data/fitIn${i}.json`).then(function(data){
         data.forEach((e , i) => {
             fit_content.eq(i).append(
@@ -54,7 +86,7 @@ for(var i = 1; i <= 3; i++) {
     })
 }
 
-// story 데이터바인딩
+//story DataBinding
 $.get('../../src/data/storySlide.json').then((data)=>{
     data.map((data , i)=>{
         $('.story ul').append(`
@@ -68,7 +100,7 @@ $.get('../../src/data/storySlide.json').then((data)=>{
         `)
     })
 })
-// yotube 데이터바인딩
+//yotube DataBinding
 $.get('../../src/data/yotubeSlide.json').then((data)=>{
     data.map((data , i)=>{
         $('.youtube .swiper-wrapper').append(`
@@ -82,3 +114,19 @@ $.get('../../src/data/yotubeSlide.json').then((data)=>{
         `)
     })
 })
+
+//footer Family Site toggle function
+family_arrow.addEventListener('click' , function(){
+    footerSelectorDepth2.classList.toggle('show');
+    this.classList.toggle('arrow-up');
+})
+footerSelector.on('click' , function(){
+    footerSelectorDepth2.classList.toggle('show');
+    family_arrow.classList.toggle('arrow-up');
+})
+for(var i = 0; i < site_length; i++){
+    family_site_a.eq(i).on('click' , function(){
+        let text = this.innerText;
+        footerSelector.val(text);
+    })
+}
