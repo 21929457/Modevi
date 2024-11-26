@@ -1,4 +1,4 @@
-<h2>Modevi Copy Coding</h3>
+<h2>Modevi</h3>
 <p>
   <b>
     ModeVi CopyCoding입니다.
