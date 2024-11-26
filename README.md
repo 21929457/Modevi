@@ -1,4 +1,4 @@
-<h3>Modevi</h3>
+<h3>Modevi Copy Coding</h3>
 <p>
   <b>
     ModeVi CopyCoding입니다. Vanila JS로 진행하였고 데이터는 별도의 파일에 저장 후 값을 불러오는 형태로 데이터베이스를 대체했습니다.
