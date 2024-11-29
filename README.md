@@ -10,7 +10,6 @@
   </b>
 </p>
 
-<br/>
 
 <h4>✨ Tech Stack ✨</h4>
 <div>
