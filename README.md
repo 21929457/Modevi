@@ -32,5 +32,6 @@
 <br/>
 <p><b>Modevi 링크입니다.👇 유사도를 확인할 수 있습니다.</b></p>
 [Modevi 링크] https://www.modevi.co.kr/front/main
-
-<p color='red'><b>p.s) 폰트 스타일 , UI표현 방법등등 아주 세심한 부분은 아주 조금 차이가 날 수 있습니다</b></p>
+<br/>
+<br/>
+<p color='red'>${\textsf{\color{red}<b>p.s) 폰트 스타일 , UI표현 방법등등 아주 세심한 부분은 아주 조금 차이가 날 수 있습니다</b>}}$</p>
