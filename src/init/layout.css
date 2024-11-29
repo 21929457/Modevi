@@ -9,6 +9,7 @@
     --black-st3 : #222;
     --black-st4 : #d8d8d8;
     --main-bg1 : #E8E7E0;
+    --search-btn : #E2E0D9;
 }
 body {overflow-y: scroll;}
 #container {position: relative;}

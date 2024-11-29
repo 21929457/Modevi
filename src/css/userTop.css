@@ -62,7 +62,10 @@ header .inner .headerR a:last-child::after {
     right: 0;
     bottom: -2px;
 }
-header .inner .headerR a img {
+header .inner .headerR i {
+    cursor: pointer;
+}
+header .inner .headerR i img , header .inner .headerR a img{
     width: 19px;
     height: 19px;
 }
@@ -94,4 +97,68 @@ header .nav-depth2 a {
 }
 header .nav-depth2.show{
     transform: translateY(0);
+}
+header .search-wrap {
+    width: 100%;
+    position: absolute;
+    padding-bottom: 50px;
+    background-color: var(--menu-st1);
+    transform: translateY(calc(-100% - 90px));
+    z-index: -100;
+    transition: .3s;
+}
+header .search-wrap.active {
+    transform: translateY(0%);
+}
+header .search-wrap form , header .search-wrap .popular-wrap {
+    max-width: 588px;
+    margin: 0 auto;
+    margin-top: 40px
+}
+header .search-wrap form {
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+header .search-wrap form input {
+    width: 100%;
+    font-size: 24px;
+    background-color: unset;
+    border: none;
+}
+header .search-wrap form input:focus {
+    outline: none;
+}
+header .search-wrap form button {
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    margin-left: 16px;
+    cursor: pointer;
+}
+header .search-wrap form .clear {
+    visibility: hidden;
+}
+header .search-wrap form .clear.active {
+    visibility: visible;
+}
+.search-wrap .popular-wrap p {
+    font-weight: 500;
+}
+.search-wrap .popular-wrap .keyword {
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.search-wrap .popular-wrap .keyword a {
+    display: inline-block;
+    padding: 0 12px;
+    background-color: var(--search-btn);
+    line-height: 35px;
+    margin-right: 10px;
+}
+.search-wrap .popular-wrap .keyword a:last-child {
+    margin-right: 0;
+}
+.search-wrap .popular-wrap .keyword p {
+    color: var(--black-st2);
 }

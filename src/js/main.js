@@ -1,6 +1,12 @@
 const topBtn = $('.youtube-btn');
 const popup_close = $('.popup-close p');
 const popup_wrap = $('.popup-wrap');
+const search_wrap = $('.search-wrap');
+const search_img = $('.search img');
+const search_input = $('.search-wrap form input');
+const search_clearBtn = $('.clear');
+const popular_p = $('.popular-wrap p');
+const keyword = $('.keyword');
 const nav_a = $('nav a');
 const nav_depth2 = $('.nav-depth2');
 const mainSlide = $('.mainSlide ul li.swiper-slide');
@@ -81,6 +87,50 @@ show_header(nav_a);
 show_header(nav_depth2);
 up_header(nav_a);
 up_header(nav_depth2);
+
+//Search Button Function
+search_img.click(function(e){
+    if(e.target.dataset.state == 0) {
+        e.target.dataset.state = 1;
+        this.src = "./src/image/ico/icon_close.svg";
+        search_wrap.addClass('active')
+    } else {
+        e.target.dataset.state = 0
+        this.src = "./src/image/ico/icon_search.svg";
+        search_wrap.removeClass('active')
+    }
+})
+
+//Search change state(1) + Search input Clear Button(2) + partical functionify
+//1
+search_input.on('input' , function(){
+    if(this.value == '') {
+        search_clearBtn.removeClass('active')
+        addSearchDefault();
+    } else {
+        popular_p.text('최근 검색어');
+        keyword.html(`
+            <p>최근 검색어가 없습니다.</p>
+        `);
+        search_clearBtn.addClass('active');
+    }
+})
+//2
+search_clearBtn.click(function(){
+    search_input.val('');
+    addSearchDefault();
+    search_clearBtn.removeClass('active');
+})
+//functionify
+function addSearchDefault(){
+    $('.popular-wrap p').text('인기검색어');
+    $('.keyword').html(`
+        <a href="">4도어</a>
+        <a href="">피트인</a>
+        <a href="">인버터</a>
+        <a href="">추천제품</a>
+    `);
+}
 
 //Menu Tab Function
 for(let i = 0; i < fit_tab.length; i++) {
