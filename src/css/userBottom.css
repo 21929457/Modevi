@@ -84,10 +84,11 @@ footer .inner .footer-l li:nth-of-type(3) a:nth-of-type(1) {
     font-weight: 500;
     line-height: 21px;
 }
-.footer-r li:nth-of-type(1) p:nth-of-type(1) a {
+.footer-r .f-tel {
     color: var(--primary-st1);
     font-size: 18px;
     margin-left: 8px;
+    cursor: pointer;
 }
 .footer-r li:nth-of-type(1) p:nth-of-type(2) {
     margin-top: 10px;

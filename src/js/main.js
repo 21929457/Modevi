@@ -29,6 +29,14 @@ let mainSlide_length = Object.keys(mainSlide).length;
 let nav_length = Object.keys(nav_a).length;
 let site_length = Object.keys(family_site_a).length;
 
+// let tel_elem = $('.f-tel');
+// let tel_num = tel_elem.text();
+// tel_elem.click(function(){
+//     window.navigator.clipboard.writeText(tel_num).then(()=>{
+//         console.log(1);
+//     })
+// })
+
 // Init AOS
 $(window).on('load',function(){
     AOS.init({
