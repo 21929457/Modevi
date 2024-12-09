@@ -4,7 +4,6 @@ var mainTop = new Swiper('.mainSlide' , {
     speed : 800,
     autoplay : {
         delay : 4700,
-        disableOnInteraction: true,
     },
     navigation: {
         nextEl: ".swiper-button-next",
